@@ -10,7 +10,8 @@ namespace Aoc_days
             Console.WriteLine("All the days!");
             //var Day = new Day1();
             //var Day = new Day2();
-            var Day = new Day3();
+            //var Day = new Day3();
+            var Day = new Day4();
 
 
             Day.Answer();

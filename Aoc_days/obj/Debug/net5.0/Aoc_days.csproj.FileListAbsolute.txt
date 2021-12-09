@@ -1,8 +1,3 @@
-C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.csproj.AssemblyReference.cache
-C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.AssemblyInfoInputs.cache
-C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.AssemblyInfo.cs
-C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.csproj.CoreCompileInputs.cache
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\bin\Debug\net5.0\Aoc_days.exe
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\bin\Debug\net5.0\Aoc_days.deps.json
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\bin\Debug\net5.0\Aoc_days.runtimeconfig.json
@@ -10,6 +5,10 @@ C:\Users\edmund\source\repos\adventofcode\Aoc_days\bin\Debug\net5.0\Aoc_days.run
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\bin\Debug\net5.0\Aoc_days.dll
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\bin\Debug\net5.0\ref\Aoc_days.dll
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\bin\Debug\net5.0\Aoc_days.pdb
+C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.AssemblyInfoInputs.cache
+C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.AssemblyInfo.cs
+C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.csproj.CoreCompileInputs.cache
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.dll
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\ref\Aoc_days.dll
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.pdb
