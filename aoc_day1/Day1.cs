@@ -3,15 +3,20 @@ using System.IO;
 
 namespace aoc_day1
 {
-    class Program
+    class Day1
     {
         static void Main(string[] args)
         {
-            var Program = new Program();
-            var depths = Program.ReadDepthsFromFile();
 
-            Console.WriteLine("simple increases - " + Program.CountIncreasesInDepth(depths));
-            Console.WriteLine("window increases - " + Program.CountIncreasesInDepthSlidingWindow(depths));
+
+        }
+
+        public void Answer()
+        {
+            var depths = ReadDepthsFromFile();
+
+            Console.WriteLine("simple increases - " + CountIncreasesInDepth(depths));
+            Console.WriteLine("window increases - " + CountIncreasesInDepthSlidingWindow(depths));
         }
 
         private int[] ReadDepthsFromFile()

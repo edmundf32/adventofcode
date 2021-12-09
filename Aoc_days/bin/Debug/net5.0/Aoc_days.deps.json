@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Aoc_days/1.0.0": {
+        "dependencies": {
+          "Aoc_day1": "1.0.0",
+          "Aoc_day2": "1.0.0"
+        },
+        "runtime": {
+          "Aoc_days.dll": {}
+        }
+      },
+      "Aoc_day1/1.0.0": {
+        "runtime": {
+          "Aoc_day1.dll": {}
+        }
+      },
+      "Aoc_day2/1.0.0": {
+        "runtime": {
+          "Aoc_day2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aoc_days/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aoc_day1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aoc_day2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Aoc_day1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Aoc_day1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aoc_day1.dll": {}
+        }
+      },
+      "Aoc_day2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Aoc_day2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aoc_day2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aoc_day1/1.0.0": {
+      "type": "project",
+      "path": "../aoc_day1/Aoc_day1.csproj",
+      "msbuildProject": "../aoc_day1/Aoc_day1.csproj"
+    },
+    "Aoc_day2/1.0.0": {
+      "type": "project",
+      "path": "../aoc_day2/Aoc_day2.csproj",
+      "msbuildProject": "../aoc_day2/Aoc_day2.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Aoc_day1 >= 1.0.0",
+      "Aoc_day2 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\edmund\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\edmund\\source\\repos\\adventofcode\\Aoc_days\\Aoc_days.csproj",
+      "projectName": "Aoc_days",
+      "projectPath": "C:\\Users\\edmund\\source\\repos\\adventofcode\\Aoc_days\\Aoc_days.csproj",
+      "packagesPath": "C:\\Users\\edmund\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edmund\\source\\repos\\adventofcode\\Aoc_days\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\edmund\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\edmund\\source\\repos\\adventofcode\\aoc_day1\\Aoc_day1.csproj": {
+              "projectPath": "C:\\Users\\edmund\\source\\repos\\adventofcode\\aoc_day1\\Aoc_day1.csproj"
+            },
+            "C:\\Users\\edmund\\source\\repos\\adventofcode\\aoc_day2\\Aoc_day2.csproj": {
+              "projectPath": "C:\\Users\\edmund\\source\\repos\\adventofcode\\aoc_day2\\Aoc_day2.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
