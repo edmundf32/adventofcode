@@ -8,13 +8,12 @@ namespace Aoc_days
         static void Main(string[] args)
         {
             Console.WriteLine("All the days!");
-            /*
-            var Day1 = new Day1();
-            Day1.Answer();
-            */
+            //var Day = new Day1();
+            //var Day = new Day2();
+            var Day = new Day3();
 
-            var Day2 = new Day2();
-            Day2.Answer();
+
+            Day.Answer();
 
         }
     }

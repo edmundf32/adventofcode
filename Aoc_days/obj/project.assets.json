@@ -1,46 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "Aoc_day1/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Aoc_day1.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Aoc_day1.dll": {}
-        }
-      },
-      "Aoc_day2/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Aoc_day2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Aoc_day2.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "Aoc_day1/1.0.0": {
-      "type": "project",
-      "path": "../aoc_day1/Aoc_day1.csproj",
-      "msbuildProject": "../aoc_day1/Aoc_day1.csproj"
-    },
-    "Aoc_day2/1.0.0": {
-      "type": "project",
-      "path": "../aoc_day2/Aoc_day2.csproj",
-      "msbuildProject": "../aoc_day2/Aoc_day2.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "Aoc_day1 >= 1.0.0",
-      "Aoc_day2 >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\edmund\\.nuget\\packages\\": {}
@@ -68,14 +33,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\edmund\\source\\repos\\adventofcode\\aoc_day1\\Aoc_day1.csproj": {
-              "projectPath": "C:\\Users\\edmund\\source\\repos\\adventofcode\\aoc_day1\\Aoc_day1.csproj"
-            },
-            "C:\\Users\\edmund\\source\\repos\\adventofcode\\aoc_day2\\Aoc_day2.csproj": {
-              "projectPath": "C:\\Users\\edmund\\source\\repos\\adventofcode\\aoc_day2\\Aoc_day2.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

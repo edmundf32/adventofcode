@@ -1,13 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\aoc_day1\Aoc_day1.csproj" />
-    <ProjectReference Include="..\aoc_day2\Aoc_day2.csproj" />
-  </ItemGroup>
 
 </Project>
