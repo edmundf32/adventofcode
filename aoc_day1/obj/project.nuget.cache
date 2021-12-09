@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NfXisf/U587PHujJBAL1lOtVGIyJtpIVyfxIn1amtPqgd7uGseJ0GWZYJF0g5tmgTROE7qPbBVBplMYDUSchhw==",
+  "dgSpecHash": "bXTP+R/fyBZFuUfruV40lPJHqwsQoNA6zXrEfxQPb+lsngdRwOx7rkixmeaacYjatEOAMTrqY/zgmdL/N67q4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\edmund\\source\\repos\\aoc_day1\\aoc_day1\\aoc_day1.csproj",
+  "projectFilePath": "C:\\Users\\edmund\\Source\\Repos\\adventofcode\\aoc_day1\\aoc_day1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

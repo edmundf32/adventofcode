@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edmund\\source\\repos\\aoc_day1\\aoc_day1\\aoc_day1.csproj": {}
+    "C:\\Users\\edmund\\Source\\Repos\\adventofcode\\aoc_day1\\aoc_day1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edmund\\source\\repos\\aoc_day1\\aoc_day1\\aoc_day1.csproj": {
+    "C:\\Users\\edmund\\Source\\Repos\\adventofcode\\aoc_day1\\aoc_day1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edmund\\source\\repos\\aoc_day1\\aoc_day1\\aoc_day1.csproj",
+        "projectUniqueName": "C:\\Users\\edmund\\Source\\Repos\\adventofcode\\aoc_day1\\aoc_day1.csproj",
         "projectName": "aoc_day1",
-        "projectPath": "C:\\Users\\edmund\\source\\repos\\aoc_day1\\aoc_day1\\aoc_day1.csproj",
+        "projectPath": "C:\\Users\\edmund\\Source\\Repos\\adventofcode\\aoc_day1\\aoc_day1.csproj",
         "packagesPath": "C:\\Users\\edmund\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edmund\\source\\repos\\aoc_day1\\aoc_day1\\obj\\",
+        "outputPath": "C:\\Users\\edmund\\Source\\Repos\\adventofcode\\aoc_day1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\edmund\\AppData\\Roaming\\NuGet\\NuGet.Config",
