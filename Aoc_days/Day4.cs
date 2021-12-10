@@ -35,36 +35,28 @@ namespace Aoc_days
         
         }
 
-        private int[] GetSelectedNumbers(string[] file)
-        {
-            int[] selectedNumbers = new int[file.Length];
-
-            for(int i = 0; i< file.Length; i++)
-            {
-                selectedNumbers[i] = Convert.ToInt32(file[i]);
-            }
-
-            return selectedNumbers;
-        }
 
         private Table MarkTable(Table table, int selectedNumber)
         {
             foreach (var row in table.rows)
             {
-                if (totalFound) break;
+                //if (totalFound) break;
                 for (int i = 0; i < 5; i++)
                 {
                     if (row[i] == selectedNumber)
                     {
                         row[i] = -1;
                         if (CheckTable(table, selectedNumber) > 0)
-                        {
+                        {/*
                             if (!totalFound)
-                            {
+                           {
                                 WinningTotal = CheckTable(table, selectedNumber);
                                 totalFound = true;
                                 break;
                             }
+                            */
+                            return WinningTable();
+
                         }
                     };
                 }
@@ -72,8 +64,13 @@ namespace Aoc_days
             return table;
         }
 
+       
         private int CheckTable(Table table, int winningNumber)
         {
+            if(winningNumber == 16)
+            {
+                int ed = 0;
+            }
             // check columns
             int[] columnasarray = new int[5];
             for (int i = 0; i<5; i++)
@@ -81,12 +78,13 @@ namespace Aoc_days
                 for (int j = 0; j < 5; j++)
                 {
                     columnasarray[j] = table.rows[j][i];
-                    if (columnasarray.Sum() == -5)
-                    {
-                        int tableTotal = CalculateWinningTotal(table);
-                        Console.WriteLine("table total = " + tableTotal + " winning number = " + winningNumber);
-                        return tableTotal * winningNumber;
-                    }
+                }
+
+                if (columnasarray.Sum() == -5)
+                {
+                    int tableTotal = CalculateWinningTotal(table);
+                    Console.WriteLine("table total = " + tableTotal + " winning number = " + winningNumber);
+                    return tableTotal * winningNumber;
                 }
 
             }
@@ -153,6 +151,34 @@ namespace Aoc_days
         class Table
         {
             public List<int[]> rows { get; set; }
+        }
+
+        private int[] GetSelectedNumbers(string[] file)
+        {
+            int[] selectedNumbers = new int[file.Length];
+
+            for (int i = 0; i < file.Length; i++)
+            {
+                selectedNumbers[i] = Convert.ToInt32(file[i]);
+            }
+
+            return selectedNumbers;
+        }
+
+        private Table WinningTable()
+        {
+            Table table = new Table() { rows = new List<int[]>() };
+            for (int i = 0; i < 5; i++)
+            {
+                int[] numrow = new int[5];
+                for (int j = 0; j < 5; j++)
+                {
+                    numrow[j] = 35;
+                }
+                table.rows.Add(numrow);
+            }
+
+            return table;
         }
     }
 }
