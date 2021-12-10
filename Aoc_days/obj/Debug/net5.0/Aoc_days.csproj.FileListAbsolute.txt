@@ -13,3 +13,4 @@ C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.dll
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\ref\Aoc_days.dll
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.pdb
 C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.genruntimeconfig.cache
+C:\Users\edmund\source\repos\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.csproj.AssemblyReference.cache

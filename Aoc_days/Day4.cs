@@ -9,69 +9,99 @@ namespace Aoc_days
     class Day4
     {
         Helper helper = new Helper();
+        bool totalFound = false;
+        int WinningTotal = 0;
+
         public void Answer()
         {
             Console.WriteLine("Day 4!");
-            var file = helper.ReadString("day4.txt");
+            var file = helper.ReadString("day4Input.txt");
 
-            var selectedNumbers = file[0].Split(",");
-            bool totalFound = false;
+            var selectedNumbersasstring = file[0].Split(",");
+            int[] selectedNumbers = GetSelectedNumbers(selectedNumbersasstring);
+
             List<Table> tables = BuildTables(file);
-            int WinningTotal = 0;
 
             foreach (var selectedNumber in selectedNumbers)
             {
-               // Console.WriteLine("selected number " + selectedNumber);
-                foreach(var table in tables)
+                if (totalFound) break;
+                for (int i = 0; i < tables.Count; i++)
                 {
-                    foreach(var row in table.rows)
-                    {
-                       for(int i = 0; i < 5; i++ )
-                        {
-                           // Console.WriteLine("row " + i +  " value " + row[i]);
-                            if (row[i].Equals(selectedNumber)) {
-                               //Console.WriteLine("true");
-                                row[i] = "x";
-                                if(CheckTable(table, selectedNumber) > 0)
-                                {
-                                    if(!totalFound)
-                                    {
-                                        WinningTotal = CheckTable(table, selectedNumber);
-                                        totalFound = true;
-                                    }                                   
-                                }                            
-                            };
-                        }
-                    }
+                    tables[i] = MarkTable(tables[i], selectedNumber);
                 }
             }
+
             Console.WriteLine("winning number = " + WinningTotal);
-       }
+        
+        }
 
-        private int CheckTable(Table table, string winningNumber)
+        private int[] GetSelectedNumbers(string[] file)
         {
-            Int32 IntRes;
+            int[] selectedNumbers = new int[file.Length];
 
+            for(int i = 0; i< file.Length; i++)
+            {
+                selectedNumbers[i] = Convert.ToInt32(file[i]);
+            }
 
-            bool IsWinner = true;
+            return selectedNumbers;
+        }
+
+        private Table MarkTable(Table table, int selectedNumber)
+        {
+            foreach (var row in table.rows)
+            {
+                if (totalFound) break;
+                for (int i = 0; i < 5; i++)
+                {
+                    if (row[i] == selectedNumber)
+                    {
+                        row[i] = -1;
+                        if (CheckTable(table, selectedNumber) > 0)
+                        {
+                            if (!totalFound)
+                            {
+                                WinningTotal = CheckTable(table, selectedNumber);
+                                totalFound = true;
+                                break;
+                            }
+                        }
+                    };
+                }
+            }
+            return table;
+        }
+
+        private int CheckTable(Table table, int winningNumber)
+        {
+            // check columns
+            int[] columnasarray = new int[5];
+            for (int i = 0; i<5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    columnasarray[j] = table.rows[j][i];
+                    if (columnasarray.Sum() == -5)
+                    {
+                        int tableTotal = CalculateWinningTotal(table);
+                        Console.WriteLine("table total = " + tableTotal + " winning number = " + winningNumber);
+                        return tableTotal * winningNumber;
+                    }
+                }
+
+            }
+    
+
             //check rows
             foreach (var row in table.rows)
             {
-                foreach (var stringEntry in row)
-                {
-                    if (Int32.TryParse(stringEntry, out IntRes)) IsWinner = false;
-                }
-
-                for(int i = 0; i<5, i++)
-                {
-                    if (Int32.TryParse(table.rows[0][i], out IntRes)) IsWinner = false;
-                }
-                if (IsWinner)
+                if (row.Sum() == -5)
                 {
                     int tableTotal = CalculateWinningTotal(table);
-                    return tableTotal * Convert.ToInt32(winningNumber);
-
+                    Console.WriteLine("table total = " + tableTotal + " winning number = " + winningNumber);
+                    return tableTotal * winningNumber;
                 }
+
             }
 
             return -1;       
@@ -80,13 +110,13 @@ namespace Aoc_days
         private int CalculateWinningTotal(Table table)
         {
             int winningTotal = 0;
-            Int32 IntRes;
+
 
             foreach (var row in table.rows)
             {
                 foreach(var item in row)
                 {
-                    if (Int32.TryParse(item, out IntRes)) winningTotal += IntRes;
+                   if(item != -1) winningTotal += item;
                 }
             }
 
@@ -102,11 +132,16 @@ namespace Aoc_days
 
             while (rowCount + 5 < file.Length + 1)
             {
-                Table table = new Table() { rows = new List<string[]>() };
+                Table table = new Table() { rows = new List<int[]>() };
                 for (int i = 0; i < 5; i++)
                 {
+                    int[] numrow = new int[5];
                     var row = (file[i + rowCount].Split(" ", StringSplitOptions.RemoveEmptyEntries));
-                    table.rows.Add(row);
+                    for (int j = 0; j < 5; j++) 
+                    {
+                        numrow[j] = Convert.ToInt32(row[j]);
+                    } 
+                    table.rows.Add(numrow);
                 }
                 tables.Add(table);
                 rowCount += 6;
@@ -117,7 +152,7 @@ namespace Aoc_days
 
         class Table
         {
-            public List<string[]> rows { get; set; }
+            public List<int[]> rows { get; set; }
         }
     }
 }
