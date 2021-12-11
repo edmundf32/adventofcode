@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edmund\\source\\repos\\adventofcode\\Aoc_days\\Aoc_days.csproj": {}
+    "C:\\Users\\edmun\\Source\\Repos\\edmundf32\\adventofcode\\Aoc_days\\Aoc_days.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edmund\\source\\repos\\adventofcode\\Aoc_days\\Aoc_days.csproj": {
+    "C:\\Users\\edmun\\Source\\Repos\\edmundf32\\adventofcode\\Aoc_days\\Aoc_days.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edmund\\source\\repos\\adventofcode\\Aoc_days\\Aoc_days.csproj",
+        "projectUniqueName": "C:\\Users\\edmun\\Source\\Repos\\edmundf32\\adventofcode\\Aoc_days\\Aoc_days.csproj",
         "projectName": "Aoc_days",
-        "projectPath": "C:\\Users\\edmund\\source\\repos\\adventofcode\\Aoc_days\\Aoc_days.csproj",
-        "packagesPath": "C:\\Users\\edmund\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edmund\\source\\repos\\adventofcode\\Aoc_days\\obj\\",
+        "projectPath": "C:\\Users\\edmun\\Source\\Repos\\edmundf32\\adventofcode\\Aoc_days\\Aoc_days.csproj",
+        "packagesPath": "C:\\Users\\edmun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edmun\\Source\\Repos\\edmundf32\\adventofcode\\Aoc_days\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\edmund\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\edmun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
