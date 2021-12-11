@@ -52,7 +52,7 @@ namespace Aoc_days
             Console.Write("  0 1 2 3 4 5 6 7 8 9" + '\n');
             Console.Write("  - - - - - - - - - - " + '\n');
 
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < 10; i++)
             {
                 Console.Write(i + "|");
                 for (int j = 0; j < 1000; j++)
@@ -89,9 +89,11 @@ namespace Aoc_days
 
         private List<int[]> GetLine(List<int[]> startEnd)
         {
-            if(startEnd[0][0] == startEnd [1][0] | startEnd[0][1] == startEnd[1][1])
+            List<int[]> line = new List<int[]>();
+
+            if (startEnd[0][0] == startEnd [1][0] | startEnd[0][1] == startEnd[1][1])
             {
-                List<int[]> line = new List<int[]>();
+
 
                 startEnd = MakeVectorPositive(startEnd);
 
@@ -112,7 +114,39 @@ namespace Aoc_days
                 }
                 return line;
             }
+            else // gotta be diagonal
+            {
+                startEnd = MakeDiagonalVectorPositive(startEnd);
+
+
+                if(startEnd[0][1] > startEnd[1][1]) // diagonal up
+                {
+                    for(int i = 0; i <= startEnd[1][0] - startEnd[0][0];i++)
+                    {
+                        line.Add(new int[2] { startEnd[0][0] + i, startEnd[0][1] - i });
+                    }
+                }
+                else // diagonal down
+                {
+                    for (int i = 0; i <= startEnd[1][0] - startEnd[0][0]; i++)
+                    {
+                        line.Add(new int[2] { startEnd[0][0] + i, startEnd[0][1] + i });
+                    }
+                }
+
+
+                return line;
+
+
+
+            }
             return  new List<int[]>();
+        }
+
+        private List<int[]> GetDiagonalLine(List<int> DiagonalStartEndPoints)
+        {
+
+            return new List<int[]>();
         }
 
         private List<int[]> MakeVectorPositive(List<int[]> vector)
@@ -124,7 +158,15 @@ namespace Aoc_days
 
             return vector; // do nothing
         }
+        private List<int[]> MakeDiagonalVectorPositive(List<int[]> vector)
+        {
+            if (vector[0][0] > vector[1][0]) // always start with the smaller x
+            {
+                return new List<int[]> { vector[1], vector[0] };
+            }
 
+            return vector; // do nothing
+        }
         private int[,] MakeEmptyGrid()
         {
             int[,] grid = new int[1000, 1000];
