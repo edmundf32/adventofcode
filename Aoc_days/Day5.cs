@@ -140,7 +140,7 @@ namespace Aoc_days
 
 
             }
-            return  new List<int[]>();
+       
         }
 
         private List<int[]> GetDiagonalLine(List<int> DiagonalStartEndPoints)

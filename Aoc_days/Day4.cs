@@ -67,10 +67,7 @@ namespace Aoc_days
        
         private int CheckTable(Table table, int winningNumber)
         {
-            if(winningNumber == 16)
-            {
-                int ed = 0;
-            }
+
             // check columns
             int[] columnasarray = new int[5];
             for (int i = 0; i<5; i++)
