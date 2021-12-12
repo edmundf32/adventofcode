@@ -23,15 +23,29 @@ namespace Aoc_days
 
             var maxNum = positions.Max(z => z);
 
-            int totalFuel = maxNum * positions.Count();
+            long totalFuel = 100000000000;
+            int distanceguessFuel = 0;
 
             for (int i = 0; i < maxNum; i ++)
             {
+            
                 int guessFuel = 0;
 
                 foreach ( int item in positions)
                 {
-                    guessFuel += Math.Abs(item-i);
+                    distanceguessFuel = Math.Abs(item-i);
+                    int sumOfFuel = 0;
+
+                    for (int j = 0; j <=  distanceguessFuel; j ++)
+                    {
+                        sumOfFuel += j;
+                    }
+
+                //Console.WriteLine("move from  " + item + "to  " + i + " fuel = " + sumOfFuel);
+
+                guessFuel += sumOfFuel;
+
+
                 }
                 Console.WriteLine("iteration - " + i + "guess " + guessFuel);
                 if (guessFuel < totalFuel) totalFuel = guessFuel;
