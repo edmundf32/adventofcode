@@ -12,7 +12,7 @@ namespace Aoc_days
         public void Answer()
         {
 
-            Console.WriteLine("Day 6!");
+            Console.WriteLine("Day 7!");
             var file = helper.ReadString("day7Input.txt")[0].Split(",");
             List<int> positions = new List<int>();
 
