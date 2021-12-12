@@ -21,6 +21,7 @@ C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\bin\Debug\net5.0\Aoc
 C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\bin\Debug\net5.0\Aoc_days.dll
 C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\bin\Debug\net5.0\ref\Aoc_days.dll
 C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\bin\Debug\net5.0\Aoc_days.pdb
+C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.csproj.AssemblyReference.cache
 C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.AssemblyInfoInputs.cache
 C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.AssemblyInfo.cs
@@ -29,4 +30,3 @@ C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc
 C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\obj\Debug\net5.0\ref\Aoc_days.dll
 C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.pdb
 C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.genruntimeconfig.cache
-C:\Users\edmun\Source\Repos\edmundf32\adventofcode\Aoc_days\obj\Debug\net5.0\Aoc_days.csproj.AssemblyReference.cache
