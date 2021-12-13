@@ -11,10 +11,10 @@ namespace Aoc_days
         Helper helper = new Helper();
         public void Answer()
         {
-            Console.WriteLine("Day 5!");
+            Console.WriteLine("Day 8!");
 
             int[,] grid = MakeEmptyGrid();
-            var file = helper.ReadString("day5Input.txt");
+            var file = helper.ReadString("day5Test.txt");
 
             foreach(var item in file)
             {

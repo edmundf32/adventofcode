@@ -15,7 +15,8 @@ namespace Aoc_days
             //var Day = new Day5();
             //var Day = new Day6();
             //var Day = new Day7();
-            var Day = new Day8();
+            //var Day = new Day8();
+            var Day = new Day9();
 
 
             Day.Answer();
