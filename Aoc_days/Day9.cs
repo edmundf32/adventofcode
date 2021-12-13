@@ -13,7 +13,7 @@ namespace Aoc_days
         Helper helper = new Helper();
         public void Answer()
         {
-            var lines = helper.ReadString("day9Input.txt");
+            var lines = helper.ReadString("day9.txt");
             var grid = GetThegrid(lines);
 
             List<int> lowpoints = new List<int>();
@@ -28,27 +28,52 @@ namespace Aoc_days
                     //if x
                     if (x != 0) if (grid[x , y] >= grid[x - 1 , y]) lowpoint = false;
                     //if -x
-                    if (x != 99) if (grid[x , y] >= grid[x + 1 , y]) lowpoint = false;
+                    if (x != lines[0].Length - 1) if (grid[x , y] >= grid[x + 1 , y]) lowpoint = false;
                     //if y
                     if (y != 0) if (grid[x , y] >= grid[x , y - 1]) lowpoint = false;
                     //if -y
-                    if (y != 99) if (grid[x , y] >= grid[x , y + 1]) lowpoint = false;
+                    if (y != lines.Count() - 1) if (grid[x , y] >= grid[x , y + 1]) lowpoint = false;
 
                     if (lowpoint)
                     {
-                        if(grid[x,y] == 9)
-                        {
-                            var ed = "stop";
-                        }
                         lowpoints.Add(grid[x, y] + 1);
-                    }
-                    
-
+                    }                    
                 }
             }
 
+            Console.WriteLine("Basin + = " + CalculateBasinPositivex(grid, 6 , 4));
+            Console.WriteLine("Basin -  = " + CalculateBasinNegativex(grid, 6, 4));
+
             Console.WriteLine("lowpoints total  " + lowpoints.Sum());
 
+        }
+
+        private int CalculateBasinPositivex(int[,] grid, int x, int y)
+        {
+            int basinSize = 0;
+
+            while (x != 10 && grid[x, y] != 9)
+            {
+                basinSize++;
+                x++;
+            }
+
+            return basinSize -1;
+        }
+
+        private int CalculateBasinNegativex(int[,] grid, int x, int y)
+        {
+            int basinSize = 0;
+
+            //count - x
+
+            while(x != 0 && grid[x,y] != 9)
+            {
+                basinSize++;
+                x--;
+            }
+
+            return basinSize -1;
         }
 
 
